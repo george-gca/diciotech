@@ -179,7 +179,7 @@ function insertCardsIntoHtml(data) {
                     unique-title="${cardId}"
                     id="fav_${cardId}"
                     src=${card.tags.includes("Favoritos") ? starIconFilled : starIcon}
-                    class="fav__button"
+                    class="fav__button ${card.tags.includes('Favoritos') ? 'card__filled_star' : 'card__star'}"
                 />
             </div>
             <p class="card__description">${card.description}</p>
@@ -223,9 +223,15 @@ function setCardAsFavorite(cardId) {
 
     if (favoriteCards.includes(cardId)) {
         favIcon.src = starIcon;
+        // change class of favIcon to card__star
+        favIcon.classList.remove('card__filled_star');
+        favIcon.classList.add('card__star');
         favoriteCards.splice(favoriteCards.indexOf(cardId), 1);
     } else {
         favIcon.src = starIconFilled;
+        // change class of favIcon to card__filled_star
+        favIcon.classList.remove('card__star');
+        favIcon.classList.add('card__filled_star');
         favoriteCards.push(cardId);
     }
 

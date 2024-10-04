@@ -240,6 +240,12 @@ html {
   font-size: 1.4rem;
   font-style: italic;
 }
+.card__star {
+  color: yellow;
+}
+.card__filled_star {
+  color: yellow;
+}
 
 .github-corner {
   color: #ffffff;
