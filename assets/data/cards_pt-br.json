@@ -16,6 +16,13 @@
       "description": "É a capacidade de aplicar um algoritmo treinado em um ou mais 'domínios de origem' a um 'domínio de destino' diferente, mas relacionado. A adaptação de domínio é uma subcategoria da transferência de aprendizado. Na adaptação de domínio, os domínios de origem e destino têm todos o mesmo espaço de características (mas distribuições diferentes), enquanto na transferência de aprendizado inclui casos em que o espaço de características do domínio de destino é diferente. Por exemplo, um modelo de filtragem de spam treinado com dados de um usuário pode ser adaptado para um novo usuário que recebe emails completamente diferentes."
     },
     {
+      "title": "AIoT",
+      "tags": [
+        "Conceito"
+      ],
+      "description": "AIoT (Artificial Intelligence of Things), ou Inteligência Artificial das Coisas, é a combinação de Inteligência Artificial (IA) com a Internet das Coisas (IoT). Seu principal objetivo é automatizar e acelerar o processamento dos dados gerados pelos dispositivos de IoT, com o mínimo de intervenção humana. Isso facilita a análise dos dados e torna a tomada de decisões mais rápida. Sem a IA, embora houvesse um grande volume de informações disponíveis, seria necessário depender da intervenção humana para torná-las úteis."
+    },
+    {
       "title": "Algoritmo",
       "tags": [
         "Conceito"
@@ -30,18 +37,11 @@
       "description": "Costumamos chamar de ambiente o lugar ou os servidores onde o que foi desenvolvido fica disponível para testes, validações, pessoas usuárias finais utilizarem ou demais necessidades. Esse servidor seria como um computador. Pode ser um computador físico ou disponível na nuvem. Existem os ambientes local e dev (onde o desenvolvimento está acontecendo), homolog (ou ainda hom, homol, homologação - onde os testes costumam ser feitos)e produção (onde está disponível o sistema final, desenvolvido e testado, para pessoas usuárias)."
     },
     {
-      "title": "AIoT",
-      "tags": [
-        "Conceito"
-      ],
-      "description": "AIoT (Artificial Intelligence of Things), ou Inteligência Artificial das Coisas, é a combinação de Inteligência Artificial (IA) com a Internet das Coisas (IoT). Seu principal objetivo é automatizar e acelerar o processamento dos dados gerados pelos dispositivos de IoT, com o mínimo de intervenção humana. Isso facilita a análise dos dados e torna a tomada de decisões mais rápida. Sem a IA, embora houvesse um grande volume de informações disponíveis, seria necessário depender da intervenção humana para torná-las úteis."
-    },
-    {
       "title": "Angular.js",
       "tags": [
         "Conceito",
-        "Front-end",
-        "Framework"
+        "Framework",
+        "Front-end"
       ],
       "description": "Angular.js é uma ferramenta desenvolvida pelo Google que facilita a criação de sites ou aplicativos que funcionam como uma única página (SPAs), ou seja, sem recarregar a página inteira a cada interação. Ele organiza o código de forma eficiente usando \"módulos\" e \"injeção de dependências\", o que ajuda a manter tudo mais fácil de gerenciar. Grandes empresas como Google e Microsoft utilizam essa tecnologia."
     },
@@ -243,8 +243,10 @@
     },
     {
       "title": "CMD",
-      "description": "O CMD (abreviação de \"Command Prompt\", ou Prompt de Comando) é uma interface de linha de comando presente no sistema operacional Windows. Ele permite que os usuários interajam diretamente com o sistema usando comandos de texto, ao invés de uma interface gráfica (GUI). No CMD, você pode executar uma série de tarefas e comandos diretamente, como navegar por diretórios, manipular arquivos, configurar o sistema e rodar programas. Conceitos Principais: Linha de Comando: É onde você digita os comandos. Ao contrário de uma interface gráfica, onde você clica em ícones e botões, na linha de comando, você escreve instruções que o computador executa diretamente. Prompt: Refere-se à tela inicial onde você começa a digitar os comandos.",
-      "tags": ["Conceito"]
+      "tags": [
+        "Conceito"
+      ],
+      "description": "O CMD (abreviação de \"Command Prompt\", ou Prompt de Comando) é uma interface de linha de comando presente no sistema operacional Windows. Ele permite que os usuários interajam diretamente com o sistema usando comandos de texto, ao invés de uma interface gráfica (GUI). No CMD, você pode executar uma série de tarefas e comandos diretamente, como navegar por diretórios, manipular arquivos, configurar o sistema e rodar programas. Conceitos Principais: Linha de Comando: É onde você digita os comandos. Ao contrário de uma interface gráfica, onde você clica em ícones e botões, na linha de comando, você escreve instruções que o computador executa diretamente. Prompt: Refere-se à tela inicial onde você começa a digitar os comandos."
     },
     {
       "title": "Coalescência nula",
@@ -745,8 +747,8 @@
       "title": "Next.js",
       "tags": [
         "Conceito",
-        "Front-end",
-        "Framework"
+        "Framework",
+        "Front-end"
       ],
       "description": "Next.js é uma ferramenta baseada no React que ajuda a criar sites mais rápidos e fáceis de encontrar nos buscadores (SEO). Ele permite que as páginas sejam geradas no servidor (SSR) ou criadas de forma estática (SSG), o que melhora o tempo de carregamento das páginas e a experiência da pessoa usuária."
     },
@@ -918,8 +920,8 @@
       "title": "React",
       "tags": [
         "Conceito",
-        "Front-end",
-        "Framework"
+        "Framework",
+        "Front-end"
       ],
       "description": "React é uma biblioteca JavaScript de código aberto utilizada para criar interfaces de usuário interativas e dinâmicas em aplicações web e em outros ambientes, como mobile, TV, realidade virtual, entre outros. Ele se destaca por seu modelo de programação baseado em componentes e pela eficiência na atualização da interface do usuário, tornando-o uma escolha popular no desenvolvimento front-end."
     },
@@ -970,7 +972,12 @@
         "Inteligência artificial",
         "Rede neural"
       ],
-      "description": "É um tipo de rede neural artificial que usa uma operação matemática chamada convolução em uma ou mais de suas camadas. Do inglês, Convolutional Neural Network ou CNN, ela é frequentemente usada para processar dados de entrada que têm uma estrutura matricial, como imagens, e é muito usada em aplicações de visão computacional, como reconhecimento de imagens e vídeos."
+      "description": "É um tipo de rede neural artificial que usa uma operação matemática chamada convolução em uma ou mais de suas camadas. Do inglês, Convolutional Neural Network ou CNN, ela é frequentemente usada para processar dados de entrada que têm uma estrutura matricial, como imagens, e é muito usada em aplicações de visão computacional, como reconhecimento de imagens e vídeos.",
+      "content": {
+        "crossReferences": [
+          "rede neural artificial"
+        ]
+      }
     },
     {
       "title": "Rede Neural Generativa",
@@ -1017,10 +1024,10 @@
     },
     {
       "title": "RPA",
-      "description": "Robotic Process Automation (Automação de Processos Robóticos), é uma tecnologia que permite a automação de tarefas repetitivas e baseadas em regras, utilizando robôs de software para realizar principalmente atividades repetitivas. Esses robôs imitam ações humanas em sistemas digitais, como clicar em botões, preencher formulários, copiar e colar dados, acessar sistemas e executar processos predefinidos.",
       "tags": [
         "Conceito"
-      ]
+      ],
+      "description": "Robotic Process Automation (Automação de Processos Robóticos), é uma tecnologia que permite a automação de tarefas repetitivas e baseadas em regras, utilizando robôs de software para realizar principalmente atividades repetitivas. Esses robôs imitam ações humanas em sistemas digitais, como clicar em botões, preencher formulários, copiar e colar dados, acessar sistemas e executar processos predefinidos."
     },
     {
       "title": "Ruby",
@@ -1083,20 +1090,20 @@
       "description": "Um StatelessWidget, no Flutter, é um componente que não possui estado interno mutável, ideal para partes da interface do usuário que não mudam com o tempo e não dependem de estado."
     },
     {
-      "title": "Svelte",
-      "tags": [
-        "Conceito",
-        "Front-end",
-        "Framework"
-      ],
-      "description": "Svelte é uma ferramenta JavaScript que transforma o código durante a construção do site ou aplicativo, sem precisar de uma camada extra para funcionar no navegador. Isso o torna mais rápido e leve em comparação com outras ferramentas similares."
-    },
-    {
       "title": "Style Guide",
       "tags": [
         "Design"
       ],
       "description": "É uma biblioteca que reúne diretrizes de estilo e padrões visuais para a criação de produtos digitais. Ele inclui elementos como tipografia, paletas de cores, uso de ícones e layouts, mas não abrange aspectos técnicos, como código. O objetivo de um style guide é garantir a consistência visual e a coerência na comunicação de marca, servindo como referência para designers e equipes de marketing e comunicação mas sem a colaboração direta das pessoas desenvolvedoras."
+    },
+    {
+      "title": "Svelte",
+      "tags": [
+        "Conceito",
+        "Framework",
+        "Front-end"
+      ],
+      "description": "Svelte é uma ferramenta JavaScript que transforma o código durante a construção do site ou aplicativo, sem precisar de uma camada extra para funcionar no navegador. Isso o torna mais rápido e leve em comparação com outras ferramentas similares."
     },
     {
       "title": "Swift",
@@ -1233,8 +1240,8 @@
       "title": "Vue.js",
       "tags": [
         "Conceito",
-        "Front-end",
-        "Framework"
+        "Framework",
+        "Front-end"
       ],
       "description": "Vue.js é uma ferramenta JavaScript usada para criar interfaces de usuário, ou seja, o que as pessoas veem e interagem em um site ou aplicativo. Ele é fácil de adicionar a projetos já existentes e é muito utilizado para construir sites que funcionam como uma única página (SPAs)."
     },

@@ -206,7 +206,26 @@ function insertCardsIntoHtml(data) {
                     </div>
                 </div>`
     data.forEach((card) => {
-        const cardId = generateCardId(card.id, card.title, card.description)
+        const cardId = generateCardId(card.id, card.title, card.description);
+        let description = card.description;
+
+        if (card.content && card.content.crossReferences && card.content.crossReferences.length > 0) {
+            // loop through cross references, find them in the card description
+            const lowerDescription = description.toLowerCase();
+            card.content.crossReferences.forEach((ref) => {
+                const refIndex = lowerDescription.indexOf(ref.toLowerCase());
+                if (refIndex > -1) {
+                    // search for the reference in all cards, if found, add its description as tooltip
+                    const refCard = data.find((card) => card.title.toLowerCase() == ref.toLowerCase());
+                    if (refCard) {
+                        description = description.slice(0, refIndex) +
+                            `<span class="tooltip">${description.slice(refIndex, refIndex + ref.length)}<span class="tooltiptext">${refCard.description}</span></span>` +
+                            description.slice(refIndex + ref.length);
+                    }
+                }
+            });
+        }
+
         cards += `
         <section class="card" tags="${
             card.tags ? card.tags : "Todos"
@@ -224,7 +243,7 @@ function insertCardsIntoHtml(data) {
                     } fav__button">
                 </i>
             </div>
-            <p class="card__description">${card.description}</p>
+            <p class="card__description">${description}</p>
         `;
         if (card.content && card.content.code) {
             cards += `
