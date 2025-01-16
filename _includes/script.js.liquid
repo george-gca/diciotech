@@ -60,10 +60,7 @@
         // every child is re-appended to cards in the order of the now sorted array. When an element is re-appended it is actually moved from its previous location
         [...cards.querySelectorAll(".card:not([style*='display: none;'])")]
           .sort((a, b) =>
-            a
-              .querySelector('.card__title')
-              .textContent.toLowerCase()
-              .localeCompare(b.querySelector('.card__title').textContent.toLowerCase()),
+            a.querySelector('.card__title').textContent.toLowerCase().localeCompare(b.querySelector('.card__title').textContent.toLowerCase())
           )
           .forEach((node) => cards.appendChild(node));
       } else {
@@ -207,9 +204,7 @@
                       alt="star"
                       unique-title="${cardId}"
                       id="fav_${cardId}"
-                      class="${
-                        card.tags.includes('{{ page.favorites }}') ? 'ph-fill ph-star' : 'ph ph-star'
-                      } fav__button">
+                      class="${card.tags.includes('{{ page.favorites }}') ? 'ph-fill ph-star' : 'ph ph-star'} fav__button">
                   </i>
               </div>
               <p class="card__description">${card.description}</p>
